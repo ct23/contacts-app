@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     post "/contacts" => "contacts#create"         # Create
     patch "/contacts/:id" => "contacts#update"    # Update
     delete "/contacts/:id" => "contacts#destroy"  # Destroy
-    # Destroy
   end
 
 end
