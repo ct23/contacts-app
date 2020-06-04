@@ -10,5 +10,7 @@
     japan_number: contact.japanify,
     friendly_updated_at: contact.friendly_updated_at,
   },
-  bio: contact.bio
+  bio: contact.bio,
+  lat: contact.lat,
+  lon: contact.lon
 }
