@@ -30,8 +30,13 @@ class Api::ContactsController < ApplicationController
     @contact.email = params[:email] || @contact.email
     @contact.phone_number = params[:phone_number] || @contact.phone_number
     @contact.bio = params[:bio] || @contact.bio
-    @contact.lat = params[:lat] || @contact.lat
-    @contact.lon = params[:lon] || @contact.lon
+    
+    if params[:address]
+      coords = Geocoder.coordinates(params[:address])
+      @contact.lat = coords[0]
+      @contact.lon = coords[1]
+    end
+    
     @contact.save
     render 'one_contact.json.jb'
   end
