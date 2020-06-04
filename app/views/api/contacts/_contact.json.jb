@@ -2,9 +2,13 @@
   id: contact.id,
   full_name: contact.full_name,
   first_name: contact.first_name,
+  middle_name: contact.middle_name,
   last_name: contact.last_name,
   email: contact.email,
   phone_number: contact.phone_number,
-  japan_number: contact.japanify,
-  friendly_updated_at: contact.friendly_updated_at
+  formatted: {
+    japan_number: contact.japanify,
+    friendly_updated_at: contact.friendly_updated_at,
+  },
+  bio: contact.bio
 }
