@@ -41,3 +41,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'http'
 gem 'rack-cors'
 gem 'jb'
+
+# Geocoder gem to get coordinates from address
+gem 'geocoder'
